@@ -1,12 +1,12 @@
-import * as bootsrtap from "bootstrap";
+import * as bootstrap from "bootstrap";
 
 export default defineNuxtPlugin(nuxtApp => {
   // now available on `nuxtApp.$injected`
   nuxtApp.provide('bootstrap', () => bootstrap)
-  // You can alternatively use this format, which comes with automatic type support
-  // return {
-  //   provide: {
-  //     injected: () => bootsrtap
-  //   }
-  // }
+  //  This will allow us to use the bootstrap object
+  //
+  //  Example:
+  //  const scrollSpy = new this.$bootstrap.ScrollSpy(document.body, {
+  //    target: '#scrollspy'
+  //  });
 })

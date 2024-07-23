@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  devtools: { enabled: true },
+
     ssr: process.env.NODE_ENV !== "development",
     runtimeConfig: {
         public: {
@@ -9,25 +11,35 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            charset: 'utf-16',
-            viewport: 'width=500, initial-scale=1',
-            title: 'Nuxt 3 Starter Template',
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'My amazing site',
             meta: [
-                // <meta name="description" content="My amazing site">
-                {name: 'description', content: 'Nuxt 3 Starter'}
-            ],
-        }
+          {name: 'description', content: 'My amazing site'}
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+      ]
     },
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' },
+  },
+  plugins: [ { src: 'plugins/bootstrap.js', mode: 'client' } ],
 
-    css: ['~/assets/scss/style.scss', '~/assets/css/dashboard.css'],
+  /** Styles */
+  css: ['~/assets/scss/style.scss', '~/assets/css/style.css'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/_variables.scss" as *;',
+        },
+      },
+    },
+  },
 
-    plugins: [
-        {
-            src: 'plugins/bootstrap.js',
-            mode: 'client'
-        }
-    ],
-    components: {global: true, dirs: ['~/components']},
     modules: [
         '@nuxtjs/i18n',
         '@pinia/nuxt',

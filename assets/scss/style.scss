@@ -1,4 +1,7 @@
 @use "sass:color";
+
+@import "bootstrap.override";
+
 // Bootstrap
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -7,4 +10,9 @@
 // Bootstrap
 @import "bootstrap/scss/bootstrap";
 // @import "bootstrap-icons/font/bootstrap-icons.css";
-@import "custom";
+
+// Custom
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "transitions";
