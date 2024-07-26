@@ -49,7 +49,10 @@ export default withNuxt(
     files: ['*.vue', '**/*.vue', '**/*.ts'],
     rules: {
       '@typescript-eslint/no-explicit-any': 'error',
-      'vue/multi-word-component-names': 'error',
+      'vue/multi-word-component-names': [
+        'error',
+        { ignores: ['Header', 'Footer'] },
+      ],
       'prettier/prettier': [
         'error',
         {
