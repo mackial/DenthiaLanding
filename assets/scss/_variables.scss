@@ -1,9 +1,4 @@
-/** Pallete */
-// Bright colors
-$bright-bg: #ffffff;
-// Dark colors
-$dark-bg: #242424;
-// System
+/** Palette */
 $primary: #67d946;
 $primary-light: #8fd400;
 $primary-x-light: #bee477;
@@ -11,24 +6,27 @@ $secondary: #00dbc9;
 $secondary-light: #73ecc2;
 $secondary-x-light: #e6fcf4;
 $tertiary: #22c95d;
-$light: $bright-bg;
-$dark: $dark-bg;
+$light: #ffffff;
+$dark: #242424;
 $dark-blue-bg: #131f2b;
 $dark-gray-bg: #434e5b;
 $dark-x-gray-bg: #3a434e;
-// Info
-// $success: #6ec388;
-// $warning: #ffdd31;
-// $danger: #f84031;
 
-// gradients
-// $gradient-bg: linear-gradient(180deg, rgba($white, 0.15), rgba($white, 0));
+/** gradients */
 $gradient-btn: linear-gradient(38deg, #51d42b 12.18%, #9eeb00 78.36%), #67d946;
 
-/** Font size */
-// $fs-base: 1rem * 0.625; // 10px
-// $fs-xl: $fs-base * 3.7;
-// $fs-lg: $fs-base * 2.9;
-// $fs-md: $fs-base * 2.2;
-// $fs-sm: $fs-base * 1.9;
-// $fs-xs: $fs-base * 1.4;
+/** Font */
+$body-font-family: "Open sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$head-font-family: Lato, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+$ds-xl: 4.9rem;
+$ds-lg: 3.8rem;
+$ds-md: 3rem;
+$ds-sm: 2.4rem;
+$ds-xs: 1.8rem;
+
+$fs-xl: 3.7rem;
+$fs-lg: 2.9rem;
+$fs-md: 2.2rem;
+$fs-sm: 1.9rem;
+$fs-xs: 1.4rem;
