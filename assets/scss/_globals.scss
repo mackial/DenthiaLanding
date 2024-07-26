@@ -1,0 +1,99 @@
+@import './_mixins.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.position-center {
+  @include center;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.wh-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-disabled {
+  border: 1px solid #cccccc;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+  &:active, &:focus {
+    box-shadow: none;
+  }
+}
+
+.voerro-notification-theme-error {
+  background: $danger;
+  color: $light;
+}
+.voerro-notification-theme-success {
+  background: $success;
+  color: $light;
+}
+
+/** Skeleton loading */
+.loading {
+  position: relative;
+  background-color: var(--secondary-bg);
+  overflow: hidden;
+}
+/* The moving element */
+.loading::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(rgb(167 167 167 / 20%)),
+    to(transparent)
+  );
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(167 167 167 / 20%),
+    transparent
+  );
+
+  /* Adding animation */
+  animation: loading 0.8s infinite;
+}
+
+/* Loading Animation */
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+  }
+}
