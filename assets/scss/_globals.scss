@@ -38,6 +38,11 @@ input[type='number'] {
   height: 100%;
 }
 
+.btn-primary {
+  background: $primary;
+  background: $gradient-btn;
+}
+
 .btn-disabled {
   border: 1px solid #cccccc;
   background-color: #cccccc;
