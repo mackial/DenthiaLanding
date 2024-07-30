@@ -38,6 +38,14 @@ input[type='number'] {
   height: 100%;
 }
 
+.btn, .btn-primary, .btn-secondary {
+  color: $light;
+}
+
+.btn:hover, .btn-primary:hover, .btn-secondary:hover {
+  color: $light;
+}
+
 .btn-primary {
   background: $primary;
   background: $gradient-btn;

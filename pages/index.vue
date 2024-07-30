@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <!-- <Hero /> -->
-    <!-- <Services /> -->
+    <HeroSection />
+    <!-- <ServicesSection /> -->
   </div>
 </template>
