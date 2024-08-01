@@ -2,6 +2,6 @@
   <div>
     <Header />
     <HeroSection />
-    <!-- <ServicesSection /> -->
+    <ServicesSection />
   </div>
 </template>

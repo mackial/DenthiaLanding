@@ -39,6 +39,16 @@ input[type='number'] {
   height: 100%;
 }
 
+.hide-scrollbar {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /** Skeleton loading */
 .loading {
   position: relative;
@@ -88,6 +98,10 @@ input[type='number'] {
 
 .btn, .btn-primary, .btn-secondary, .btn:hover, .btn-primary:hover, .btn-secondary:hover {
   color: $light;
+}
+
+.btn-outline-light:hover {
+  color: $dark;
 }
 
 .btn-primary {

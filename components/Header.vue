@@ -109,7 +109,7 @@ const isNavbarSideActive = ref(false);
     position: absolute;
     background: linear-gradient(
       90deg,
-      rgba(226, 226, 226, 0.2) 0%,
+      rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 1) 80%
     );
     top: -38px;
