@@ -5,7 +5,7 @@
       <a
         class="text-light text-decoration-none d-inline-block py-2"
         href="#"
-        style="filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5))">
+        style="filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2))">
         {{ advertising }}
       </a>
     </div>
@@ -40,7 +40,7 @@
         <div
           class="navbar-side d-lg-none"
           :class="{ 'navbar-side-active': isNavbarSideActive }">
-          <div class="navbar-side-content fs-2">
+          <div class="navbar-side-content fs-3">
             <button
               type="button"
               class="navbar-side-close btn-close"
@@ -54,7 +54,7 @@
                 <a class="nav-link" :href="n.link">{{ n.name }}</a>
               </li>
               <li class="nav-item mt-3">
-                <a class="btn btn-primary text-light fs-3" type="submit">
+                <a class="btn btn-primary text-light" type="submit">
                   Agenda tu cita
                 </a>
               </li>
@@ -112,7 +112,7 @@ const isNavbarSideActive = ref(false);
       rgba(226, 226, 226, 0.2) 0%,
       rgba(0, 0, 0, 1) 80%
     );
-    top: -30px;
+    top: -38px;
     left: 110%;
     opacity: 0;
     transition:

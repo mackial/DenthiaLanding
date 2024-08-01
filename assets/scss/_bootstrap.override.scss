@@ -1,5 +1,17 @@
 @import 'variables';
 
+/** Spacing */
+
+$spacer: 1.6rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.25,
+  5: $spacer * 2,
+);
+
 /** Text */
 
 $font-family-base:            $body-font-family;
@@ -29,6 +41,10 @@ $display-font-sizes: (
   5: $h5-font-size
 );
 
+$headings-font-family:        $head-font-family;
+$headings-font-weight:        bold;
+$headings-line-height:        1;
+
 $display-font-family: $head-font-family;
 $display-font-weight: 700;
 $display-line-height: 1;
@@ -44,14 +60,14 @@ $navbar-toggler-font-size:          2rem;
 
 // BUTTON
 
-$btn-padding-y:               1rem;
-$btn-padding-x:               2rem;
+$btn-padding-y:               1.6rem;
+$btn-padding-x:               2.6rem;
 $btn-font-size:               1.6rem;
 $btn-white-space:             nowrap;
 
 $btn-font-size-lg:               1.6rem;
-$btn-padding-y-lg:               1.4rem;
-$btn-padding-x-lg:               2.6rem;
+$btn-padding-y-lg:               2rem;
+$btn-padding-x-lg:               3rem;
 
 $btn-border-radius:           0.8rem;
 $btn-border-radius-lg:           1rem;

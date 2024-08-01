@@ -1,12 +1,11 @@
 <template>
-  <div class="hero-bg position-relative mt-lg-0">
+  <div class="hero position-relative mt-lg-0">
     <HeroCarousel />
-    <div class="hero-content h-100"></div>
     <div class="position-absolute bottom-0 start-0 end-0">
       <img class="d-lg-none" src="~/assets/images/img-01.png" />
       <img class="d-none d-lg-block w-100" src="~/assets/images/img-02.png" />
     </div>
-    <a class="hero-next py-1 d-inline-block" href="#">Ir a servicios</a>
+    <a class="hero-next py-1 d-inline-block" href="#services">Ir a servicios</a>
     <div
       class="hero-highlights d-none d-lg-flex position-absolute bottom-0 start-0 end-0 justify-content-between mx-4 pb-3">
       <div class="left d-flex align-items-center">
@@ -32,15 +31,13 @@
 
 <style lang="scss">
 .hero {
-  &-bg {
-    width: 100%;
-    height: calc(100vh - 90px);
-    margin-top: 90px;
-    background: linear-gradient(290deg, #00dd90 5.9%, #8fd400 169.04%);
-  }
+  width: 100%;
+  height: calc(100vh - 90px);
+  margin-top: 90px;
+  background: linear-gradient(290deg, #00dd90 5.9%, #8fd400 169.04%);
   &-next {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 50%;
     padding-left: 2rem;
     padding-right: 2rem;

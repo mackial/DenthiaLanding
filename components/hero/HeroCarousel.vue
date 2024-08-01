@@ -20,19 +20,19 @@
         <div
           class="carousel-content h-100 d-lg-flex justify-content-center align-items-center">
           <div class="carousel-caption">
-            <h5 class="display-1">{{ s.title }}</h5>
-            <p class="fs-3">{{ s.description }}</p>
+            <h5 class="display-1 mb-5">{{ s.title }}</h5>
+            <p class="fs-3 mb-5">{{ s.description }}</p>
             <div class="carousel-cta">
               <a
                 href="#"
-                class="btn btn-lg btn-secondary"
+                class="btn btn-secondary"
                 style="filter: drop-shadow(0px 10px 18px rgba(0, 0, 0, 0.1))">
                 Agenda tu cita
               </a>
               <a href="#" class="btn">
                 <span class="d-flex">
-                  Nuestros servicios
-                  <span class="material-symbols-rounded ms-1">
+                  Ver servicios
+                  <span class="material-symbols-rounded ms-3">
                     arrow_forward
                   </span>
                 </span>
@@ -109,14 +109,10 @@ const slides = [
     text-align: start;
     padding: 1.6rem;
     h5 {
-      margin-bottom: 32px;
       line-height: 1;
-      font-weight: 900;
-      color: #fff;
     }
     p {
-      margin-bottom: 32px;
-      line-height: 1.3;
+      line-height: 1.2;
       font-weight: 400;
     }
   }
