@@ -20,7 +20,7 @@
         <div
           class="carousel-content h-100 d-lg-flex justify-content-center align-items-center">
           <div class="carousel-caption">
-            <h5 class="display-1 mb-5">{{ s.title }}</h5>
+            <h2 class="display-1 mb-5">{{ s.title }}</h2>
             <p class="fs-3 mb-5">{{ s.description }}</p>
             <div class="carousel-cta">
               <a

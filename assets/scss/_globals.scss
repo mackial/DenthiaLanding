@@ -49,6 +49,14 @@ input[type='number'] {
   }
 }
 
+.section-anchor-limit {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  right: 0;
+  padding-top: 10rem;
+}
+
 /** Skeleton loading */
 .loading {
   position: relative;
@@ -119,31 +127,31 @@ input[type='number'] {
   }
 }
 
-.display-1 {
-  @include media-breakpoint-down(sm) {
-    font-size: rfs-fluid-value(7.2rem);
-  }
-}
-
-.display-2 {
+.display-1, h1 {
   @include media-breakpoint-down(sm) {
     font-size: rfs-fluid-value(5.4rem);
   }
 }
 
-.display-3 {
+.display-2, h2 {
   @include media-breakpoint-down(sm) {
     font-size: rfs-fluid-value(4.2rem);
   }
 }
 
-.display-4 {
+.display-3, h3 {
   @include media-breakpoint-down(sm) {
     font-size: rfs-fluid-value(3.2rem);
   }
 }
 
-.display-5 {
+.display-4, h4 {
+  @include media-breakpoint-down(sm) {
+    font-size: rfs-fluid-value(2.2rem);
+  }
+}
+
+.display-5, h5 {
   @include media-breakpoint-down(sm) {
     font-size: rfs-fluid-value(2.2rem);
   }

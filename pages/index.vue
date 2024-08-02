@@ -3,5 +3,6 @@
     <Header />
     <HeroSection />
     <ServicesSection />
+    <AboutUsSection />
   </div>
 </template>

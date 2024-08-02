@@ -1,6 +1,6 @@
 <template>
   <div class="services text-center text-light overflow-hidden">
-    <div id="services" class="services-anchor-limit"></div>
+    <div id="services" class="section-anchor-limit"></div>
     <div class="services-headline px-3 px-lg-0">
       <h2 class="mb-3">Nuestros Servicios Dentales</h2>
       <p class="m-auto" style="max-width: 597px">
@@ -126,13 +126,6 @@ const cards = [
   position: relative;
   padding: 6rem 0 5rem;
   background-color: $dark-x-gray-bg;
-  &-anchor-limit {
-    position: absolute;
-    top: -10rem;
-    left: 0;
-    right: 0;
-    padding-top: 10rem;
-  }
   &-headline {
     margin-bottom: 4rem;
     p {

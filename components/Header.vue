@@ -31,7 +31,9 @@
           class="collapse navbar-collapse justify-content-lg-end text-lg-start">
           <ul class="navbar-nav me-lg-4 mb-2 mb-lg-0">
             <li v-for="(n, i) in navItems" :key="i" class="nav-item">
-              <a class="nav-link" :href="n.link">{{ n.name }}</a>
+              <a class="nav-link" :href="n.link">
+                {{ n.name }}
+              </a>
             </li>
           </ul>
           <a class="btn btn-primary text-light" type="submit">Agenda tu cita</a>
@@ -51,7 +53,12 @@
               "></button>
             <ul class="navbar-nav">
               <li v-for="(n, i) in navItems" :key="i" class="nav-item mb-2">
-                <a class="nav-link" :href="n.link">{{ n.name }}</a>
+                <a
+                  class="nav-link"
+                  :href="n.link"
+                  @click="() => (isNavbarSideActive = !isNavbarSideActive)">
+                  {{ n.name }}
+                </a>
               </li>
               <li class="nav-item mt-3">
                 <a class="btn btn-primary text-light" type="submit">
@@ -70,10 +77,10 @@
 const advertising = '¡Valoración dental GRATIS en tu primer cita!';
 
 const navItems = [
-  { name: 'Servicios', link: '#' },
-  { name: 'Nosotros', link: '#' },
-  { name: 'Promociones', link: '#' },
-  { name: 'Contáctanos', link: '#' },
+  { name: 'Servicios', link: '#services' },
+  { name: 'Nosotros', link: '#aboutUs' },
+  { name: 'Promociones', link: '#promotions' },
+  { name: 'Contáctanos', link: '#contactUs' },
 ];
 
 const isNavbarSideActive = ref(false);
