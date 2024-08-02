@@ -5,5 +5,6 @@
     <ServicesSection />
     <AboutUsSection />
     <TeamSection />
+    <CallToActionSection />
   </div>
 </template>
