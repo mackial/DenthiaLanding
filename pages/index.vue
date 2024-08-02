@@ -4,5 +4,6 @@
     <HeroSection />
     <ServicesSection />
     <AboutUsSection />
+    <TeamSection />
   </div>
 </template>
