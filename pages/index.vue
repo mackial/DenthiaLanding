@@ -6,5 +6,6 @@
     <AboutUsSection />
     <TeamSection />
     <CallToActionSection />
+    <PromotionsSection />
   </div>
 </template>
