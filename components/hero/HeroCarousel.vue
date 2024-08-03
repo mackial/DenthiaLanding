@@ -89,6 +89,7 @@ const slides = [
 .carousel {
   height: calc(100% - 62px);
   &-indicators {
+    bottom: -100px;
     button {
       width: 10px;
       height: 10px;
