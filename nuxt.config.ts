@@ -9,6 +9,9 @@ export default defineNuxtConfig({
       API_BASE_URL: process.env.API_URL,
     },
   },
+  generate: {
+    routes: ['/'],
+  },
   app: {
     head: {
       charset: 'utf-8',
