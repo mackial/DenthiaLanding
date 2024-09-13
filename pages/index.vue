@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div>
     <Header />
@@ -8,5 +11,6 @@
     <CallToActionSection />
     <PromotionsSection />
     <TestimonialsSection />
+    <FAQSection />
   </div>
 </template>

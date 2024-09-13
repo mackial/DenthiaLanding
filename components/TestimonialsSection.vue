@@ -30,7 +30,7 @@
           :key="i"
           class="carousel-item justify-content-center"
           :class="{ active: i == 0 }">
-          <div class="d-flex">
+          <div class="d-flex justify-content-center">
             <div
               v-for="({ name, description, location, image }, j) in s"
               :key="j"

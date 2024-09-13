@@ -75,3 +75,32 @@ $btn-border-radius:           0.8rem;
 $btn-border-radius-lg:           1rem;
 
 $btn-font-weight:             600;
+
+// ACCORDION
+
+$accordion-padding-y:                     2rem;
+$accordion-padding-x:                     2.4rem;
+$accordion-color:                         #6F6C90;
+$accordion-bg:                            $light;
+$accordion-border-width:                  0;
+$accordion-border-color:                  transparent;
+$accordion-border-radius:                 8px;
+$accordion-inner-border-radius:           8px;
+
+$accordion-body-padding-y:                $accordion-padding-y;
+$accordion-body-padding-x:                $accordion-padding-x;
+
+$accordion-button-padding-y:              $accordion-padding-y;
+$accordion-button-padding-x:              $accordion-padding-x;
+$accordion-button-color:                  #170F49;
+$accordion-button-bg:                     $light;
+$accordion-button-active-bg:              $light;
+$accordion-button-active-color:           #22C95D;
+
+// // fusv-enable
+$accordion-button-focus-box-shadow:       initial;
+
+$accordion-icon-width:                    2.4rem;
+$accordion-icon-color:                    $accordion-button-color;
+$accordion-icon-transition:               transform .2s ease-in-out;
+$accordion-icon-transform:                rotate(-180deg);
