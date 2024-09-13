@@ -11,6 +11,7 @@
     <CallToActionSection />
     <PromotionsSection />
     <TestimonialsSection />
+    <GallerySection />
     <FAQSection />
   </div>
 </template>

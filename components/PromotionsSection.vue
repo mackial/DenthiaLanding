@@ -26,41 +26,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Promotions slides -->
-    <div
-      ref="promoSlider"
-      class="d-none promotions-slider position-relative container d-flex hide-scrollbar overflow-x-scroll">
-      <div ref="promos" class="img-cards row flex-nowrap px-2 hide-scrollbar">
-        <div
-          v-for="({ image, alt }, i) in promotions"
-          :key="i"
-          class="promo-cards-item mx-2 px-0">
-          <!-- @click="promoClick(index)"> -->
-          <img
-            class="d-block mx-auto w-100"
-            :src="images[`${image}`]"
-            :alt="alt" />
-        </div>
-      </div>
-
-      <button
-        v-if="promotions.length > 3"
-        class="carousel-control-prev snap-scroll d-none d-lg-block"
-        type="button">
-        <!-- @click="snapSlide('prev')"> -->
-        <span class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        v-if="promotions.length > 3"
-        class="carousel-control-next snap-scroll d-none d-lg-block"
-        type="button">
-        <!-- @click="snapSlide('next')"> -->
-        <span class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
   </div>
 </template>
 
