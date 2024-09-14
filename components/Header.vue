@@ -3,8 +3,8 @@
     <!-- Header advertising -->
     <div class="bg-secondary text-center">
       <a
-        class="text-light text-decoration-none d-inline-block py-2"
-        href="#"
+        class="text-light text-decoration-none d-inline-block py-2 fw-medium"
+        href="https://api.whatsapp.com/send?phone=5213781108597&text=Hola%20me%20comunico%20para%20pedir%20informes"
         style="filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2))">
         {{ advertising }}
       </a>
@@ -36,7 +36,9 @@
               </a>
             </li>
           </ul>
-          <a class="btn btn-primary text-light" type="submit">Agenda tu cita</a>
+          <a class="btn btn-primary text-light" :href="whatsLink">
+            Agenda tu cita
+          </a>
         </div>
         <!-- Mobile navbar -->
         <div
@@ -61,7 +63,7 @@
                 </a>
               </li>
               <li class="nav-item mt-3">
-                <a class="btn btn-primary text-light" type="submit">
+                <a class="btn btn-primary text-light" :href="whatsLink">
                   Agenda tu cita
                 </a>
               </li>
@@ -80,8 +82,11 @@ const navItems = [
   { name: 'Servicios', link: '#services' },
   { name: 'Nosotros', link: '#aboutUs' },
   { name: 'Promociones', link: '#promotions' },
-  { name: 'Contáctanos', link: '#contactUs' },
+  { name: 'Contáctanos', link: '#contact' },
 ];
+
+const whatsLink =
+  'https://api.whatsapp.com/send?phone=5213781108597&text=Hola%20me%20comunico%20para%20pedir%20informes';
 
 const isNavbarSideActive = ref(false);
 </script>

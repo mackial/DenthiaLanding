@@ -1,6 +1,6 @@
 <template>
   <div class="promotions">
-    <div id="aboutUs" class="section-anchor-limit"></div>
+    <div id="promotions" class="section-anchor-limit"></div>
     <div class="container px-3">
       <div class="promotions-headline text-center mb-5 pb-3">
         <h2>Revisa Las Promociones Que Tenemos Para Tí</h2>
