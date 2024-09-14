@@ -13,5 +13,6 @@
     <TestimonialsSection />
     <GallerySection />
     <FAQSection />
+    <ContactSection />
   </div>
 </template>
